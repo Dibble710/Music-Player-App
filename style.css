@@ -5,12 +5,11 @@
 }
 
 body {
-  background: #16222A;
+  background: #16222a;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #3A6073, #16222A);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #3A6073, #16222A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,10 +17,23 @@ body {
   justify-content: center;
   font-family: "Lobster", cursive;
   margin: 0;
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .music-container {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.733);
   border-radius: 15px;
   box-shadow: 0 20px 20px 0 gray;
   display: flex;
@@ -38,13 +50,13 @@ body {
 
 .img-container::after {
   content: "";
-  background-color: #fff;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
   left: 50%;
-  width: 20px;
-  height: 20px;
+  width: 7px;
+  height: 7px;
   transform: translate(-50%, 50%);
 }
 
@@ -83,9 +95,9 @@ body {
 }
 
 .action-btn {
-  background-color: #fff;
+  background-color: transparent;
   border: 0;
-  color: #dfdbdf;
+  color: darkblue;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
@@ -93,7 +105,7 @@ body {
 }
 
 .action-btn.action-btn-big {
-  color: #cdc2d0;
+  color: darkblue;
   font-size: 30px;
 }
 
@@ -122,6 +134,7 @@ body {
 
 .music-info h4 {
   margin: 0;
+  color: #16222a;
 }
 
 .progress-container {
@@ -134,7 +147,7 @@ body {
 }
 
 .progress {
-  background-color: #fe8daa;
+  background-color: blue;
   border-radius: 5px;
   height: 100%;
   width: 0%;
