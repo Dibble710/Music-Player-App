@@ -11,7 +11,7 @@ const coverImage = document.querySelector("#cover");
 
 // Song Titles
 
-const songs = ["early bird", "wish you were here"];
+const songs = ["early bird", "wish you were here", "the jazz piano", "all that"];
 
 // Keep track of the songs
 
